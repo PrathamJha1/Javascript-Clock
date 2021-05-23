@@ -41,12 +41,12 @@ h1{
     font-weight: bold;
     text-align: center;
 }
-/* .contain{
+.contain{
     display: flex;
     align-items: center;
     justify-content: center;
     padding:3%;
-} */
+}
 /* clock box */
 .clock{
     border: 3px solid black;
