@@ -1,0 +1,133 @@
+:root{
+    --wid:500px;
+    --hgt:500px;
+    --size:2rem;
+    --bsize:3rem;
+    --rotation:0;
+}
+@media only screen and (max-width: 650px){
+    :root{
+        --wid:350px;
+        --hgt:350px;
+        --size:1.2rem;
+        --bsize:2rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    :root{
+        --wid:200px;
+        --hgt:200px;
+        --size:1rem;
+        --bsize:1.5rem;
+    }
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background:blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: var(--bsize);
+    text-align: center;
+}
+.numbers{
+    position: absolute;
+    width: var(--wid);
+    height:var(--hgt);
+    font-size: var(--size);
+    font-weight: bold;
+    text-align: center;
+}
+/* .contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3%;
+} */
+/* clock box */
+.clock{
+    border: 3px solid black;
+    border-radius: 50%;
+    background: white;
+    box-shadow: -2px 4px 18px 5px black;
+    width:var(--wid);
+    height:var(--hgt);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+/* all hours */
+.number1{
+    transform: rotate(30deg);
+}
+.number2{
+    transform: rotate(60deg);
+}
+.number3{
+    transform: rotate(90deg);
+}
+.number4{
+    transform: rotate(120deg);
+}
+.number5{
+    transform: rotate(150deg);
+}
+.number6{
+    transform: rotate(180deg);
+}
+.number7{
+    transform: rotate(210deg);
+}
+.number8{
+    transform: rotate(240deg);
+}
+.number9{
+    transform: rotate(270deg);
+}
+.number10{
+    transform: rotate(300deg);
+}
+.number11{
+    transform: rotate(330deg);
+}
+.clock::after{
+    content:'';
+    position: absolute;
+    z-index: 4;
+    background: black;
+    left:50%;
+    top:52%;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+}
+.hand{
+    --rotation:0;
+    position: absolute;
+    bottom:48%;
+    left:50%;
+    border-radius: 30%;
+    transform-origin: bottom;
+    transform:translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+.hour{
+    --rotation:0;
+    height:20%;
+    width:10px;
+    background: black;
+}
+.minute{
+    --rotation:0;
+    width:7px;
+    height:24%;
+    background: black;
+}
+.second{
+width:3px;
+height: 25%;
+background: red;
+}
