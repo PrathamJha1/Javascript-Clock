@@ -18,7 +18,6 @@ body{
 h1{
     font-size: var(--bsize);
     text-align: center;
-    min-height: 4vh;
 }
 .numbers{
     position: absolute;

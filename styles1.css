@@ -1,0 +1,40 @@
+:root{
+    --wid:300px;
+    --hgt:300px;
+    --size:1.5rem;
+    --bsize:2rem;
+    --rotation:0;
+}
+.clock::after{
+    content:'';
+    position: absolute;
+    z-index: 4;
+    background: black;
+    left:50%;
+    top:31%;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+}
+.hand{
+    --rotation:0;
+    position: absolute;
+    bottom:69%;
+    left:50%;
+    border-radius: 30%;
+    transform-origin: bottom;
+    transform:translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+.hour{
+    height:9%;
+    width:10px;
+}
+.minute{
+    height:12%;
+    width:8px;
+}
+.second{
+    height:14%;
+    width:4px;
+}
