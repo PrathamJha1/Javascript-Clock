@@ -5,22 +5,6 @@
     --bsize:3rem;
     --rotation:0;
 }
-@media only screen and (max-width: 650px){
-    :root{
-        --wid:350px;
-        --hgt:350px;
-        --size:1.2rem;
-        --bsize:2rem;
-    }
-}
-@media only screen and (max-width: 400px){
-    :root{
-        --wid:200px;
-        --hgt:200px;
-        --size:1rem;
-        --bsize:1.5rem;
-    }
-}
 body{
     font-family: 'Times New Roman', Times, serif;
     background:blueviolet;
@@ -28,10 +12,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 8vh;
+    overflow: hidden;
 }
 h1{
     font-size: var(--bsize);
     text-align: center;
+    min-height: 4vh;
 }
 .numbers{
     position: absolute;
@@ -99,7 +86,7 @@ h1{
     z-index: 4;
     background: black;
     left:50%;
-    top:52%;
+    top:60%;
     width:20px;
     height:20px;
     border-radius:50%;
@@ -108,7 +95,7 @@ h1{
 .hand{
     --rotation:0;
     position: absolute;
-    bottom:48%;
+    bottom:40%;
     left:50%;
     border-radius: 30%;
     transform-origin: bottom;
@@ -116,18 +103,18 @@ h1{
 }
 .hour{
     --rotation:0;
-    height:20%;
+    height:10%;
     width:10px;
     background: black;
 }
 .minute{
     --rotation:0;
     width:7px;
-    height:24%;
+    height:14%;
     background: black;
 }
 .second{
 width:3px;
-height: 25%;
+height: 20%;
 background: red;
 }
