@@ -11,7 +11,7 @@
     z-index: 4;
     background: black;
     left:50%;
-    top: 18%;
+    top: 25%;
     width:10px;
     height:10px;
     border-radius:50%;
@@ -20,7 +20,7 @@
 .hand{
     --rotation:0;
     position: absolute;
-    bottom:82%;
+    bottom:75%;
     left:50%;
     border-radius: 30%;
     transform-origin: bottom;
