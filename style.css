@@ -28,9 +28,7 @@ h1{
     text-align: center;
 }
 .contain{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     padding:3%;
 }
 /* clock box */
@@ -85,7 +83,7 @@ h1{
     z-index: 4;
     background: black;
     left:50%;
-    top:55%;
+    top:50%;
     width:20px;
     height:20px;
     border-radius:50%;
@@ -94,7 +92,7 @@ h1{
 .hand{
     --rotation:0;
     position: absolute;
-    bottom:45%;
+    bottom:50%;
     left:50%;
     border-radius: 30%;
     transform-origin: bottom;
@@ -102,18 +100,18 @@ h1{
 }
 .hour{
     --rotation:0;
-    height:10%;
+    height:15%;
     width:10px;
     background: black;
 }
 .minute{
     --rotation:0;
     width:7px;
-    height:14%;
+    height:20%;
     background: black;
 }
 .second{
 width:3px;
-height: 20%;
+height: 25%;
 background: red;
 }
